@@ -7,3 +7,14 @@
     align-items: center;
     justify-content: space-between;
   }
+
+.complete-button {
+    border: none;
+    padding: 5px;
+    font-size: 0.5rem;
+    cursor: pointer;
+}
+
+.complete {
+    text-decoration: line-through;
+}

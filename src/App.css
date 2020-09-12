@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 .app {
-    background: #6b469a;
+    background: #f4f4f4;
     padding: 50px;
     height: 100vh;
     font-family: 'Raleway', sans-serif;
@@ -11,10 +11,10 @@
   }
 
 .todo-list {
-    background: #f4f4f4;
+    background: #6b469a;
     padding: 5px;
     width: 25%;
-    padding: 50px;
+    padding: 70px;
     line-height: 1.5;
   }
 
@@ -22,4 +22,6 @@
     margin-top: 0;
     text-align: center;
     text-transform: uppercase;
+    color: #f4f4f4;
+    font-size: 2.5rem;
 }
