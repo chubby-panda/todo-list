@@ -2,14 +2,13 @@ import React from 'react'
 import "./TodoItem.css"
 
 function TodoItem(props) {
-    const { todo, index, completeTodo, removeTodo, undoComplete } = props
+    const { todo, index, completeTodo, removeTodo } = props
     return (
         <div className={`todo ${todo.isCompleted ? 
         "complete" : ""}`}>{todo.text}
             <div>
-                <button class="button" onClick={() => completeTodo(index)}>✓</button>
-                <button class="button" onClick={() => undoComplete(index)}>Undo</button>
-                <button class="button" onClick={() => removeTodo(index)}>X</button>
+                <button className="button" onClick={() => completeTodo(index)}>{todo.isCompleted ? "Undo" : "Done"}</button>
+                <button className="button" onClick={() => removeTodo(index)}>X</button>
             </div>
         </div>
     )

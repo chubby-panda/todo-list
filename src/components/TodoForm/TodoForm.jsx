@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './TodoForm.css'
 
 function TodoForm(props) {
     // variables
@@ -21,8 +21,9 @@ function TodoForm(props) {
         <form onSubmit={handleSubmit}>
             <input 
                 value={value}
+                className="input-box"
                 type="text" 
-                placeholder="Add to list..."
+                placeholder="Click to add something..."
                 onChange={(event) => setValue(event.target.value)}
             />
         </form>

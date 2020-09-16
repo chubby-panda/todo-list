@@ -3,13 +3,11 @@ import TodoItem from './components/TodoItem/TodoItem'
 import TodoForm from './components/TodoForm/TodoForm'
 import "./App.css"
 
+
 function App() {
     // variables
     const [todos, setTodos] = React.useState([
-        { text: 'Finish plus project', isCompleted: false }, 
-        { text: 'Go grocery shopping', isCompleted: false },
-        { text: 'Bake carrot cake', isCompleted: false }, 
-        { text: 'Exercise', isCompleted: false },
+        { text: 'Clean kitchen', isCompleted: false }
     ])
 
     // methods
@@ -34,11 +32,6 @@ function App() {
         setTodos(newTodos)
     }
 
-    const undoComplete = (index) => {
-        const newTodos = [...todos]
-        newTodos[index].isCompleted = false
-        setTodos(newTodos)
-    }
 
     // template
     return (
@@ -52,7 +45,6 @@ function App() {
                         index={index} 
                         completeTodo={completeTodo} 
                         removeTodo={removeTodo}
-                        undoComplete={undoComplete}
                     />
                 ))}
                 <TodoForm addTodo={addTodo} />

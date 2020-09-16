@@ -1,22 +1,25 @@
 .todo {
     background: #fff;
+    max-width: 100%;
     padding: 10px;
     font-size: 0.8rem;
-    margin-bottom: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
   }
 
 .button {
     border: none;
-    padding: 5px;
+    /* padding: 5px; */
     font-size: 0.5rem;
     cursor: pointer;
     height: 20px;
     width: auto;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     background-color: inherit;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .button:focus {
